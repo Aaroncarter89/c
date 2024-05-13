@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /*
- * @author jelathro
- * @date 2/19/13
+ * @author aaroncrter    
+ * @date 13/05/2024
  * 
  * Provide various examples of pointers 
  * and how pointers work.
  */
-int main(void){
+int main(){
     // Basic pointers and Basic addresses
     int *basic_pointer;
     int basic_value;
@@ -27,7 +27,7 @@ int main(void){
     char *same_array = array;
     char **fancy_same_array = &same_array;
 
-    printf("array[3] = %c, addr = %p\n", array[3], &array[3]);
+    printf("Character at 2nd position = %c, addr = %p\n", array[2], &array[2]);
     printf("same_array[3] = %c, addr = %p\n", same_array[3], &same_array[3]);
     printf("**fancy_same_array[3] = %c, addr = %p\n", (*fancy_same_array)[3], &(*fancy_same_array)[3]);
 
